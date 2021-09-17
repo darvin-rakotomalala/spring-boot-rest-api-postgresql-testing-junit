@@ -8,6 +8,7 @@ doit tester les points de terminaison REST avant même l'intégration dans leurs
 une partie vitale du code car il s'agit du seul point d'accès de chaque entité souhaitant utiliser les services du serveur.<br/>
 
 ### Tests d'intégration vs. tests unitaires
+---
 Un **test unitaire** couvre une seule «unité», où une unité est généralement une classe unique, mais peut également être un groupe de classes cohésives testées en combinaison.<br/>
 
 Un **test d'intégration** peut être l'un des suivants :<br/>
@@ -16,11 +17,13 @@ Un **test d'intégration** peut être l'un des suivants :<br/>
 	* un test qui couvre tout le chemin à travers l'application. Dans ces tests, nous envoyons une requête à l'application et vérifions qu'elle répond correctement et a changé l'état de la base de données selon nos attentes.
 
 ### Qu'est-ce que JUnit ?
+---
 JUnit est l'un des frameworks de tests unitaires les plus populaires pour le développement Java. 
 JUnit est pris en charge par presque tous les IDE Java et outils de construction, c'est donc le choix 
 par défaut des programmeurs pour tester leur code.
 
 #### Dépendances de la portée du test
+---
 Lorsque nous créons un projet Spring Boot, il ajoute par défaut une dépendance `spring-boot-starter-test` pour écrire des cas de test JUnit.<br/>
 Le **spring-boot-starter-test « Starter »** (dans le test scope) contient les bibliothèques fournies suivantes :<br/>
 - JUnit 5 : La norme de facto pour les tests unitaires des applications Java.
@@ -64,13 +67,14 @@ Dans ce projet nous allons utiliser les dependances Maven suivants :<br/>
 ---
 À l'intérieur de `src/test/java` on crée `ProductTest.java`, où nous écrirons des cas de test unitaires pour l'entité `Product`.<br/>
 Nous utilisons la méthode `assertThat()` de la bibliothèque `AssertJ` pour plus de lisibilité que d'utiliser les méthodes d'assertion de JUnit.<br/>
-	* Scénario de test pour l'opération de sauvegarde - cas de test unitaire pour enregistrer les détails du produit dans la base de données
-	Cas de test pour l'opération de lecture - cas de test unitaire pour lire tous les produits de la base de données
-	Cas de test pour l'opération de lecture - as de test unitaire pour lire tous et un seul produits de la base de données
-	Scénario de test pour l'opération de mise à jour - cas de test unitaire pour mettre à jour les détails du produit
-	Scénario de test pour l'opération de suppression - cas de test unitaire pour supprimer le produit
+`$ mvn test` - Exécutez toutes les classes de test unitaire.<br/><br/>
+- **Scénario de test pour l'opération de sauvegarde** - cas de test unitaire pour enregistrer les détails du produit dans la base de données.
+- **Cas de test pour l'opération de lecture** - cas de test unitaire pour lire tous les produits de la base de données.
+- **Cas de test pour l'opération de lecture** - cas de test unitaire pour lire tous et un seul produits de la base de données.
+- **Scénario de test pour l'opération de mise à jour** - cas de test unitaire pour mettre à jour les détails du produit.
+- **Scénario de test pour l'opération de suppression** - cas de test unitaire pour supprimer le produit.
 
 
 
-`$ mvn spring-boot:run`<br/><br/>		
+		
 
