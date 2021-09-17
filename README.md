@@ -74,7 +74,6 @@ Nous utilisons la méthode `assertThat()` de la bibliothèque `AssertJ` pour plu
 - **Scénario de test pour l'opération de mise à jour** - cas de test unitaire pour mettre à jour les détails du produit.
 - **Scénario de test pour l'opération de suppression** - cas de test unitaire pour supprimer le produit.
 
+![testJUnit](https://user-images.githubusercontent.com/75081354/133749982-12e0ae8a-89d7-4040-9a86-b74f16b9ca7e.PNG)
 
-
-		
 
