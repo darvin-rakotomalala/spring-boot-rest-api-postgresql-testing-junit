@@ -65,9 +65,9 @@ Dans ce projet nous allons utiliser les dependances Maven suivants :<br/>
 
 ### Exécuter les tests
 ---
-À l'intérieur de `src/test/java` on crée `ProductTest.java`, où nous écrirons des cas de test unitaires pour l'entité `Product`.<br/>
+À l'intérieur de `src/test/java` on crée `ProductTest.java`, où nous écrirons des cas de test unitaires pour l'entité `Product`.
 Nous utilisons la méthode `assertThat()` de la bibliothèque `AssertJ` pour plus de lisibilité que d'utiliser les méthodes d'assertion de JUnit.<br/>
-`$ mvn test` - Exécutez toutes les classes de test unitaire.<br/><br/>
+`$ mvn test` - Exécutez toutes les classes de test unitaire.<br/>
 - **Scénario de test pour l'opération de sauvegarde** - cas de test unitaire pour enregistrer les détails du produit dans la base de données.
 - **Cas de test pour l'opération de lecture** - cas de test unitaire pour lire tous les produits de la base de données.
 - **Cas de test pour l'opération de lecture** - cas de test unitaire pour lire tous et un seul produits de la base de données.
